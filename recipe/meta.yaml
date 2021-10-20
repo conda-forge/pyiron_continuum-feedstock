@@ -24,6 +24,7 @@ requirements:
     - pyiron_base >=0.2.19
     - python >=3.5
     - sympy >=1.9
+    - scipy >=1.7.1
 
 test:
   imports:
