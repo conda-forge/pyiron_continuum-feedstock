@@ -23,7 +23,7 @@ requirements:
     - numpy >=1.21.0
     - pyiron_base >=0.2.19
     - python >=3.5
-    - sympy
+    - sympy >=1.9
 
 test:
   imports:
