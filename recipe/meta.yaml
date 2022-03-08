@@ -1,5 +1,5 @@
 {% set name = "pyiron_continuum" %}
-{% set version = "0.0.4" %}
+{% set version = "0.0.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyiron_continuum-{{ version }}.tar.gz
-  sha256: eba6df4587eb0f0026a1dafce668bee0671bbde5243cbff3b51a434ea20d2a3d
+  sha256: bd6ca37dc66a606d284f4fe2d3c015d9e0d305fbe9e4ff6d2c1a757c44314282
 
 build:
   number: 0
