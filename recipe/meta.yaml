@@ -10,7 +10,7 @@ source:
   sha256: bd6ca37dc66a606d284f4fe2d3c015d9e0d305fbe9e4ff6d2c1a757c44314282
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -51,5 +51,5 @@ extra:
     - pyiron-runner
     - jan-janssen
     - pmrv
-    - muh-hassani
+    - srmnitc
     - niklassiemer
