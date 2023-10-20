@@ -1,5 +1,5 @@
 {% set name = "pyiron_continuum" %}
-{% set version = "0.0.5" %}
+{% set version = "0.0.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyiron_continuum-{{ version }}.tar.gz
-  sha256: bd6ca37dc66a606d284f4fe2d3c015d9e0d305fbe9e4ff6d2c1a757c44314282
+  sha256: 22902232c75255ba833df3573f06f964a834e635b449506a15b89a7a7497dd31
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -19,12 +19,12 @@ requirements:
     - pip
     - python >=3.5
   run:
-    - matplotlib-base >=3.4.2
-    - numpy >=1.21.0
-    - pyiron_base >=0.2.19
+    - matplotlib-base >=3.8.0
+    - numpy >=1.26.0
+    - pyiron_base >=0.6.8
     - python >=3.5
-    - sympy >=1.9
-    - scipy >=1.7.1
+    - sympy >=1.12
+    - scipy >=1.11.3
 
 test:
   imports:
