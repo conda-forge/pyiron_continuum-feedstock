@@ -7,14 +7,7 @@ Home: https://github.com/pyiron/pyiron_continuum
 
 Package license: BSD-3-Clause
 
-Summary: Additional modules for the pyiron IDE supporting continuum dynamics
-
-Development: https://github.com/pyiron/pyiron_continuum
-
-Documentation: https://github.com/pyiron/pyiron_continuum
-
-additional modules for the pyiron IDE supporting continuum dynamics
-
+Summary: Repository for user-generated plugins to the pyiron IDE.
 
 Current build status
 ====================
