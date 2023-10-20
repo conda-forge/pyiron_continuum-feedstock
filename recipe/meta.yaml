@@ -10,26 +10,25 @@ source:
   sha256: 22902232c75255ba833df3573f06f964a834e635b449506a15b89a7a7497dd31
 
 build:
-  number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 1
 
 requirements:
   host:
-    - pip
     - python >=3.5
+    - pip
   run:
+    - python >=3.5
     - matplotlib-base >=3.8.0
     - numpy >=1.26.0
     - pyiron_base >=0.6.8
-    - python >=3.5
-    - sympy >=1.12
     - scipy >=1.11.3
+    - sympy >=1.12
 
 test:
   imports:
     - pyiron_continuum
-    - pyiron_continuum.damask
   commands:
     - pip check
   requires:
@@ -37,14 +36,9 @@ test:
 
 about:
   home: https://github.com/pyiron/pyiron_continuum
+  summary: Repository for user-generated plugins to the pyiron IDE.
   license: BSD-3-Clause
-  license_family: BSD
   license_file: LICENSE
-  summary: Additional modules for the pyiron IDE supporting continuum dynamics
-  description: |
-    additional modules for the pyiron IDE supporting continuum dynamics
-  doc_url: https://github.com/pyiron/pyiron_continuum
-  dev_url: https://github.com/pyiron/pyiron_continuum
 
 extra:
   recipe-maintainers:
