@@ -1,5 +1,5 @@
 {% set name = "pyiron_continuum" %}
-{% set version = "0.0.7" %}
+{% set version = "0.0.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyiron_continuum-{{ version }}.tar.gz
-  sha256: 220ecd639aec2d257eeadfd26648b8036eadbdb5b9b2320a54b05d54c3d53261
+  sha256: c5e26992cc4f8315e2eec595ceebcf28e4e6723c3bf84f9088c153543e7ef71c
 
 build:
   noarch: python
@@ -20,11 +20,12 @@ requirements:
     - pip
   run:
     - python >=3.5
-    - matplotlib-base >=3.8.1
-    - numpy >=1.26.0
+    - matplotlib-base >=3.8.2
+    - numpy >=1.26.2
     - pyiron_base >=0.6.9
-    - scipy >=1.11.3
+    - scipy >=1.11.4
     - sympy >=1.12
+    - python-blosc2  # required by table
 
 test:
   imports:
