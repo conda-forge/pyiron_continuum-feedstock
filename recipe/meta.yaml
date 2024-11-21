@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyiron_continuum-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyiron_continuum-{{ version }}.tar.gz
   sha256: 6aa27897049860afba28f18f7d2d51a3bf9b7a470d989a55df79d55eb4ba7845
 
 build:
