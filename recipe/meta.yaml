@@ -1,13 +1,13 @@
 {% set name = "pyiron_continuum" %}
-{% set version = "0.0.9" %}
+{% set version = "0.0.10" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyiron_continuum-{{ version }}.tar.gz
-  sha256: f6d4cf778e177ce1c062ef5c1e0050cb3f5ce6d2c5f33257f3f27a1cbd5284a0
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyiron_continuum-{{ version }}.tar.gz
+  sha256: 6aa27897049860afba28f18f7d2d51a3bf9b7a470d989a55df79d55eb4ba7845
 
 build:
   noarch: python
@@ -18,13 +18,15 @@ requirements:
   host:
     - python >=3.5
     - pip
+    - setuptools
   run:
+    - pyiron_snippets >=0.1.4
     - python >=3.5
-    - matplotlib-base >=3.8.3
+    - matplotlib-base >=3.9.2
     - numpy >=1.26.4
-    - pyiron_base >=0.7.11
-    - scipy >=1.12.0
-    - sympy >=1.12
+    - pyiron_base >=0.9.12
+    - scipy >=1.14.1
+    - sympy >=1.13.2
     - python-blosc2  # required by table
 
 test:
@@ -48,3 +50,4 @@ extra:
     - pmrv
     - srmnitc
     - niklassiemer
+    - mbruns91
