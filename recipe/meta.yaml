@@ -1,5 +1,6 @@
 {% set name = "pyiron_continuum" %}
 {% set version = "0.0.9" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -18,6 +19,7 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
+    - setuptools
   run:
     - python >={{ python_min }}
     - matplotlib-base >=3.8.3
